@@ -48,7 +48,7 @@ pipeline {
                 sh '''
                     docker run -d \
                         --name "${APP_NAME}-main-${BUILD_NUMBER}" \
-                        -p 5000:5000 \
+                        -p 5001:5001 \
                         "${APP_NAME}:${BUILD_NUMBER}"
 
                     docker ps
