@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY hello.py .
 
-EXPOSE 5000
+EXPOSE 5001
 
 CMD ["python", "hello.py"]
